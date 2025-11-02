@@ -40,15 +40,10 @@ wheels/
 .installed.cfg
 *.egg
 
-# Node.js
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.npm
-.yarn/
-.pnp
-.pnp.js
+# Database
+*.db
+*.sqlite
+*.sqlite3
 
 # Logs
 logs/
@@ -65,43 +60,22 @@ logs/
 *.backup
 *.old
 
-# Database
-*.db
-*.sqlite
-*.sqlite3
-
 # Secrets
 secrets/
 *.pem
 *.key
 *.cert
 
-# Build artifacts
-build/
-dist/
-*.exe
-*.dmg
-*.pkg
-
-# Coverage reports
-coverage/
-.nyc_output/
-htmlcov/
-
 # Testing
 .pytest_cache/
 .coverage
 .coverage.*
 .cache
+.tox/
 
-# Documentation builds
-docs/_build/
-site/
+# Migrations (Alembic)
+# migrations/versions/ (keep structure, ignore generated files)
 
-# Certificates (if needed separately)
-certs/
-
-# Local configuration
-config.local.*
-settings.local.*
-
+# Bot specific
+bot.log
+*.log.*
